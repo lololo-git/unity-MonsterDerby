@@ -5,12 +5,11 @@ public class Parameters: ScriptableObject
 {
     [Header("Max speed of Bar")]
     [Range(0, 20)]
-    public float BarMaxSpeed;
+    public float MonsterDefaultMaxSpeed;
 
-    [Header("Acceleration of Bar")]
+    [Header("Max speed of Bar")]
     [Range(0, 20)]
-    public float BarAcceleration;
-
+    public float MonsterDefaultAcceleration;
 
 
     // Immplementation of Singleton

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 278bf98fd4d54604792bd56b9aa188fa, type: 3}
   m_Name: Parameters
   m_EditorClassIdentifier: 
-  BarMaxSpeed: 5
-  BarAcceleration: 0.4
+  MonsterDefaultMaxSpeed: 10
+  MonsterDefaultAcceleration: 10

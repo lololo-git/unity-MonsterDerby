@@ -12,18 +12,21 @@ public class MonsterGenerator : MonoBehaviour
     [SerializeField] GameObject prefabDude;
     [SerializeField] GameObject prefabOwlet;
 
-    public GameObject Generate(MonsterID mid, Vector2 position)
+    public Monster Generate(MonsterID mid, Vector2 position, Vector2 nextPoint)
     {
-        GameObject monster = null;
+        GameObject monsterObject = null;
 
         if (mid == MonsterID.PINK)
-            monster = Instantiate(prefabPink, players.transform);
+            monsterObject = Instantiate(prefabPink, players.transform);
         else if (mid == MonsterID.DUDE)
-            monster = Instantiate(prefabDude, players.transform);
+            monsterObject = Instantiate(prefabDude, players.transform);
         else if (mid == MonsterID.OWLET)
-            monster = Instantiate(prefabOwlet, players.transform);
-        
-        monster.transform.localPosition = position;
+            monsterObject = Instantiate(prefabOwlet, players.transform);
+
+        monsterObject.transform.localPosition = position;
+        var monster = monsterObject.GetComponent<Monster>();
+        monster.SetNextPoint(nextPoint);
+
         return monster;
     }
 }

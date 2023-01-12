@@ -11,5 +11,7 @@
 # What's next?
 - Write issue for new feature.
 
+# Tools
+- git lfs (for large files. like font files)
 
 Enjoy! :P

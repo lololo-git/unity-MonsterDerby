@@ -16,12 +16,12 @@ public class Turf : MonoBehaviour
 
     public Vector2 GetBarrierPoint(int num)
     {
-        var order = num % barrierNum;
+        var order = num;
+        if (order < 0 || barriers.Length < order)
+        {
+            Debug.LogError("wrong num");
+            order = 0;
+        }
         return barriers[order].transform.position;
-    }
-
-    void Start()
-    {
-        barrierNum = barriers.Length;
     }
 }

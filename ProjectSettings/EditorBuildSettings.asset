@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Title.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Game.unity
+    path: Assets/Scenes/Adjustment.unity
+    guid: e3923531d09a51a4492858a3d056af82
+  - enabled: 1
+    path: Assets/Scenes/Derby.unity
     guid: 825f9e0fa44274e4aa9f9bd133fa7c10
   m_configObjects: {}
